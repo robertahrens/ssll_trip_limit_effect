@@ -30,8 +30,9 @@ library(ggplot2)
 library(patchwork)
 
 # ---- 0. Setup ---------------------------------------------------------------
-data_file <- "/Users/robert.ahrens/Documents/Projects/Turtles/trip_limit_effect/bayes/trip_turtles_cens.Rdata"          # <- edit path
-out_dir   <- "/Users/robert.ahrens/Documents/Projects/Turtles/trip_limit_effect/bayes/output"
+setwd("set your working directory here")
+data_file <- "trip_turtles_cens.Rdata"          # <- edit path
+out_dir   <- "output"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 load(data_file)                                  # loads trip_turtles_cens
