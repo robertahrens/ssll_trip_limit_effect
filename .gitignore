@@ -1,0 +1,4 @@
+output/
+presentation/
+*.docx
+*.Rdata
