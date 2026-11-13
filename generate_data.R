@@ -1,7 +1,12 @@
+#####################################################
+#   Code to extract observation level data from LOTUS
+#   Requires approved NDA access 
+#   This version uses Free TDS as the driver
+#
+######################################################
 library(DBI)
 library(odbc)
 library(glue)
-
 
 driver.name <- "/opt/homebrew/opt/freetds/lib/libtdsodbc.so"
 db.name<-"LOTUS"
@@ -25,9 +30,7 @@ con <- dbConnect(
   ConnectionTimeout = 30
 )
 
-library(DBI)
-library(odbc)
-library(glue)
+setwd("set your working directory here")
 
 syr <- 2005
 eyr <- 2025
@@ -120,4 +123,4 @@ trip_turtles_cens <- trip_turtles_cens %>%
   mutate(block = factor(block, levels = c("Pre", "Post")))
 
 
-save(trip_turtles_cens,file="/Users/robert.ahrens/Documents/projects/turtles/trip_limit_effect/bayes/trip_turtles_cens.Rdata")
+save(trip_turtles_cens,file=f"trip_turtles_cens.Rdata")
