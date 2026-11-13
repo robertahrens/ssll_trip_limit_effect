@@ -79,7 +79,6 @@ The data are not included in this repository.
 
 All models converged (R-hat ≤ 1.006, no divergences, tail ESS > 2,200). Loggerhead estimates are insensitive to the shape prior. Leatherback estimates shift modestly with the prior (total 0.49–0.69).
 
-For loggerheads, the posterior predictive distribution of the total excess has its mode above zero. [`excess_distribution_note.md`](excess_distribution_note.md) explains why this follows from the model.
 
 ## Known issues and next steps
 
